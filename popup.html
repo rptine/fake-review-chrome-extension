@@ -2,18 +2,19 @@
 <html>
   <head>
     <style>
-      button {
+      .submit {
         height: 30px;
-        width: 30px;
+        width: 100%;
         outline: none;
+        color: blue;
       }
     </style>
   </head>
   <body>
     <form>
-        <input type="text" id="fname" name="fname" value="Enter review here"><br>
+        <textarea id="reviewText" placeholder="Enter review here"></textarea>
     </form>
-    <button id="changeColor"></button>
+    <input type="submit" class="submit" id="submitButton">
     <script src="popup.js"></script>
   </body>
 </html>
